@@ -1,0 +1,264 @@
+/* CSS RESET */
+* {
+    margin: 0PX;
+    padding: 0px;
+}
+
+/* CSS VARIABLE */
+:root {
+    --navbar-height: 50px;
+}
+
+body {
+    background-color: rgba(199, 136, 48, 0.835);
+}
+
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* navigation logo */
+#logo {
+    margin: 3pxpx 3pxpx;
+    padding: 3pxpx 3pxpx;
+}
+
+/* @keyframes adnan {
+    from {
+        width: 0%;
+        height: 0%;
+
+    }
+
+    to {
+        width: 20%;
+        height: 20%;
+    }
+} */
+
+#logo img {
+    border-radius: 100px;
+    height: 100px;
+    margin: 5px 5px;
+    /* animation-name: adnan;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out; */
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(91 61 17 / 87%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#navbar {
+    position:
+        relative;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    /* border: 2px solid black; */
+    margin: 0px 0px 0px 30px;
+}
+
+#navbar ul li {
+
+    font-size: 1.5rem;
+    /* border: 2px solid black; */
+    /* border-radius: 30%; */
+    /* padding: 10px ; */
+}
+
+#navbar ul li a {
+    border-radius: 50px;
+    color: aliceblue;
+
+    display: block;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    padding: 3px 22px;
+}
+
+#navbar ul li a:hover {
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+    background-color: rgb(110, 85, 28);
+}
+
+#home {
+    display: flex;
+
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 727px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(https://i.pinimg.com/originals/c8/ab/c8/c8abc8d040b09bf0ae0fb7bb3bd17672.jpg) no-repeat center center/cover;
+    background-size: 1500px 800px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+
+}
+
+#home h1 {
+    color: aliceblue;
+    text-align: center;
+    padding: 0px 30px 30px 30px;
+    margin: 1s0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 1rem;
+    text-shadow: 2px 2px black;
+    padding: 0px 15px 15px 15px;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px rgb(254, 253, 253);
+    width: 200px;
+    height: 50px;
+    position: relative;
+
+
+}
+
+.btn:hover {
+    background-color: rgba(199, 136, 48, 0.835);
+    cursor: pointer;
+    right: 230px;
+
+
+
+
+
+
+}
+
+.primary {
+    font-size: 3rem;
+    margin: 50px;
+    padding: 3px;
+    text-align: center;
+}
+
+.secondary {
+    font-size: 2rem;
+    padding: 3px;
+    text-align: center;
+}
+
+#client {
+    display: flex;
+    margin: 34px;
+    
+
+
+
+
+    /* border: 2px solid black; */
+
+}
+
+#client .box {
+    border: 6px solid rgb(125, 98, 0);
+    padding: 34px;
+    margin: 3px 4px;
+    border-radius: 23px;
+    background-color: rgb(247, 209, 116);
+
+
+}
+
+/* #client.box img {
+
+    display: block;
+    margin: auto;
+
+
+} */
+#company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#company img{
+ height: 100px;
+ width: 100px;
+    
+
+background-color: rgb(247, 209, 116);
+}
+#companyitem{
+    padding:34px;
+
+}
+
+
+/* #contact::before {
+    content: "";
+    background: url();
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+} */
+#contact input, #contact textarea #contact label{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+
+   
+   
+}
+.container{
+    justify-content: center;
+    /* text-align:center; */
+    width: 360px;
+    margin: auto;
+}
+
+    
+footer{
+    text-align: center;
+    background: black;
+    color: wheat
+    ;
+}
